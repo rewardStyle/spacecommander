@@ -230,13 +230,12 @@ INSAFSuccessBlock INSAPIClientModelSuccessHandler(Class mantleClass, NSString *_
         return e;
     });
 
-    [self getAsyncObject].then(^(AsyncObject *obj) {
+    [self getAsyncObject]
+    .then(^(AsyncObject *obj) {
         return [obj getAsyncProperty];
-    })
-    .then(^(AsyncProperty *property) {
+    }).then(^(AsyncProperty *property) {
         return property;
-    })
-    .catch(^(NSError *e) {
+    }).catch(^(NSError *e) {
         return e;
     });
 }
