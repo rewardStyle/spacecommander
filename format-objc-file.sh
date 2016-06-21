@@ -35,6 +35,6 @@ python "$DIR"/custom/ParameterAfterBlockNewline.py "$1"
 # Fix an issue with clang-format inserting spaces in a preprocessor macro.
 python "$DIR"/custom/HasIncludeSpaceRemover.py "$1"
 # Add a newline at the end of the file
-python "$DIR"/custom/PromiseChainFixer.py "$1"
+# python "$DIR"/custom/PromiseChainFixer.py "$1"
 # Add a newline at the end of the file
 python "$DIR"/custom/NewLineAtEndOfFileInserter.py "$1"

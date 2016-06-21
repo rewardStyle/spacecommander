@@ -9,9 +9,9 @@ AccessModifierOffset: -1
 ConstructorInitializerIndentWidth: 4
 SortIncludes: false
 
-AlignAfterOpenBracket: true
+AlignAfterOpenBracket: false
 AlignEscapedNewlinesLeft: true
-AlignOperands: true
+AlignOperands: false
 AlignTrailingComments: true
 
 AllowAllParametersOfDeclarationOnNextLine: false
@@ -34,7 +34,7 @@ BinPackArguments: true
 BinPackParameters: true
 ColumnLimit: 0
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
-DerivePointerAlignment: true
+DerivePointerAlignment: false
 ExperimentalAutoDetectBinPacking: false
 IndentCaseLabels: true
 IndentWrappedFunctionNames: false
@@ -71,6 +71,7 @@ BraceWrapping:
     BeforeCatch: false
     BeforeElse: false
     IndentBraces: false
+    AfterObjCDeclaration: false
 
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
@@ -81,7 +82,7 @@ SpaceAfterCStyleCast: false
 SpacesInContainerLiterals: false
 SpaceBeforeAssignmentOperators: true
 
-ContinuationIndentWidth: 0
+ContinuationIndentWidth: 4
 CommentPragmas:  '^ IWYU pragma:'
 ForEachMacros:   [ foreach, Q_FOREACH, BOOST_FOREACH ]
 SpaceBeforeParens: ControlStatements
