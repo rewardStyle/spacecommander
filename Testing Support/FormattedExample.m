@@ -227,4 +227,24 @@ INSAFSuccessBlock INSAPIClientModelSuccessHandler(Class mantleClass, NSString *_
 }
 // clang-format on
 
+- (void)promiseLand 
+{
+    [self getAsyncObject].then(^(AsyncObject *obj) {
+        return [obj getAsyncProperty];
+    }).then(^(AsyncProperty *property) {
+        return property;
+    }).catch(^(NSError *e) {
+        return e;
+    });
+
+    [self getAsyncObject]
+    .then(^(AsyncObject *obj) {
+        return [obj getAsyncProperty];
+    }).then(^(AsyncProperty *property) {
+        return property;
+    }).catch(^(NSError *e) {
+        return e;
+    });
+}
+
 @end

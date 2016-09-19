@@ -4,18 +4,18 @@ IndentNestedBlocks: false
 AllowNewlineBeforeBlockParameter: false
 
 Language:        Cpp
-# BasedOnStyle:  Google
+BasedOnStyle:  Google
 AccessModifierOffset: -1
 ConstructorInitializerIndentWidth: 4
 SortIncludes: false
 
-AlignAfterOpenBracket: true
+AlignAfterOpenBracket: false
 AlignEscapedNewlinesLeft: true
 AlignOperands: false
 AlignTrailingComments: true
 
 AllowAllParametersOfDeclarationOnNextLine: false
-AllowShortBlocksOnASingleLine: false
+AllowShortBlocksOnASingleLine: true
 AllowShortCaseLabelsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: true
 AllowShortIfStatementsOnASingleLine: true
@@ -26,7 +26,7 @@ AlwaysBreakAfterDefinitionReturnType: false
 AlwaysBreakTemplateDeclarations: false
 AlwaysBreakBeforeMultilineStrings: false
 
-BreakBeforeBinaryOperators: None
+BreakBeforeBinaryOperators: NonAssignment
 BreakBeforeTernaryOperators: false
 BreakConstructorInitializersBeforeComma: false
 
@@ -40,7 +40,7 @@ IndentCaseLabels: true
 IndentWrappedFunctionNames: false
 IndentFunctionDeclarationAfterType: false
 MaxEmptyLinesToKeep: 2
-KeepEmptyLinesAtTheStartOfBlocks: false
+KeepEmptyLinesAtTheStartOfBlocks: true
 NamespaceIndentation: Inner
 ObjCBlockIndentWidth: 4
 ObjCSpaceAfterProperty: true
@@ -60,17 +60,18 @@ TabWidth:        8
 UseTab:          Never
 BreakBeforeBraces: Custom
 BraceWrapping: 
-    AfterClass: true
+    AfterClass: false
     AfterControlStatement: false
     AfterEnum: false
-    AfterFunction: true
-    AfterNamespace: true
-    AfterObjCDeclaration: true
+    AfterFunction: false
+    AfterNamespace: false
+    AfterObjCDeclaration: false
     AfterStruct: false
     AfterUnion: false
     BeforeCatch: false
     BeforeElse: false
     IndentBraces: false
+    AfterObjCDeclaration: false
 
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
@@ -78,7 +79,7 @@ SpacesInAngles:  false
 SpaceInEmptyParentheses: false
 SpacesInCStyleCastParentheses: false
 SpaceAfterCStyleCast: false
-SpacesInContainerLiterals: true
+SpacesInContainerLiterals: false
 SpaceBeforeAssignmentOperators: true
 
 ContinuationIndentWidth: 4
